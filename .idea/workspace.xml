@@ -4,29 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78ece047-acec-4369-9c38-96635abb786c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/.mvn/wrapper/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/src/main/docker/Dockerfile.jvm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/src/main/docker/Dockerfile.legacy-jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/src/main/docker/Dockerfile.native" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/src/main/docker/Dockerfile.native-micro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/NumberResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/src/test/java/com/quarkus/microservices/number/NumberResourceIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/src/test/java/com/quarkus/microservices/number/NumberResourceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vintageStore.iml" afterDir="false" />
+    <list default="true" id="78ece047-acec-4369-9c38-96635abb786c" name="Changes" comment="bootstrapping the microservices">
+      <change afterPath="$PROJECT_DIR$/rest-number/src/main/http/NumberResourceRequests.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-number/src/main/http/http-client.env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/IsbnNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-number/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rest-number/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/NumberResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/NumberResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +24,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="file://$PROJECT_DIR$/rest-number/src/main/http/NumberResourceRequests.http" environment="dev" />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -54,7 +49,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.NumberResourceRequests | GET.executor": "Run",
+    "Maven.rest-book [clean,compile].executor": "Run",
+    "Maven.rest-number [clean,compile].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
@@ -63,10 +62,52 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "rest.client.default.execution.environment": "dev",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Quarkus.rest-number">
+    <configuration name="NumberResourceRequests | GET" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/rest-number/src/main/http/NumberResourceRequests.http" requestIdentifier="GET" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-book" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
+      <module name="rest-book" />
+      <QsMavenRunConfiguration>
+        <MavenSettings>
+          <option name="myGeneralSettings" />
+          <option name="myRunnerSettings" />
+          <option name="myRunnerParameters">
+            <MavenRunnerParameters>
+              <option name="cmdOptions" />
+              <option name="profiles">
+                <set />
+              </option>
+              <option name="goals">
+                <list>
+                  <option value="quarkus:dev" />
+                </list>
+              </option>
+              <option name="multimoduleDir" />
+              <option name="pomFileName" value="pom.xml" />
+              <option name="profilesMap">
+                <map />
+              </option>
+              <option name="projectsCmdOptionValues">
+                <list />
+              </option>
+              <option name="resolveToWorkspace" value="false" />
+              <option name="workingDirPath" value="$PROJECT_DIR$/rest-book" />
+            </MavenRunnerParameters>
+          </option>
+        </MavenSettings>
+        <targetMavenLocalRepo />
+        <emulateTerminal>false</emulateTerminal>
+        <profile>dev</profile>
+      </QsMavenRunConfiguration>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="rest-number" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
       <module name="rest-number" />
       <QsMavenRunConfiguration>
@@ -105,6 +146,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.NumberResourceRequests | GET" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -122,11 +168,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725140922667</updated>
-      <workItem from="1725140923684" duration="749000" />
+      <workItem from="1725140923684" duration="4438000" />
     </task>
+    <task id="LOCAL-00001" summary="bootstrapping the microservices">
+      <option name="closed" value="true" />
+      <created>1725142960216</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725142960216</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bootstrapping the microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="bootstrapping the microservices" />
   </component>
 </project>
