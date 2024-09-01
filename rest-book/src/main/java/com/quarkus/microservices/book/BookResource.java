@@ -28,7 +28,7 @@ public class BookResource {
                                 @FormParam("yearOfPublication") int yearOfPublication,
                                 @FormParam("genre") String genre) {
         Book book = new Book();
-        book.isbn13 = "We will get it later from the Number Microservice";
+        book.isbn13 = "13- We will get it later from the Number Microservice";
         book.title = title;
         book.author = author;
         book.yearOfPublication = yearOfPublication;
@@ -36,6 +36,6 @@ public class BookResource {
         book.creationDate = Instant.now();
 
         logger.info("Book created: "+ book);
-        return Response.ok(201).entity(book).build();
+        return Response.status(201).entity(book).build();
     }
 }
