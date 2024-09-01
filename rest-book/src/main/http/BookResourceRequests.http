@@ -1,0 +1,5 @@
+### POST
+POST {{url}}/api/books
+Content-Type: application/x-www-form-urlencoded
+
+title=Quarkus&author=Antonio&yearOfPublication=2021&genre=IT
