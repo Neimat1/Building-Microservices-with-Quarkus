@@ -1,4 +1,4 @@
-package com.quarkus.microservices.book;
+package com.quarkus.microservices.book.model;
 
 import jakarta.json.bind.annotation.JsonbDateFormat;
 import jakarta.json.bind.annotation.JsonbProperty;
