@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78ece047-acec-4369-9c38-96635abb786c" name="Changes" comment="rest-number: changing the port">
-      <change afterPath="$PROJECT_DIR$/rest-book/src/main/http/BookResourceRequests.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-book/src/main/http/http-client.env.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-book/src/main/java/com/quarkus/microservices/book/Book.java" afterDir="false" />
+    <list default="true" id="78ece047-acec-4369-9c38-96635abb786c" name="Changes" comment="rest-book: add a comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-book/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rest-book/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-book/src/main/http/http-client.env.json" beforeDir="false" afterPath="$PROJECT_DIR$/rest-book/src/main/http/http-client.env.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest-book/src/main/java/com/quarkus/microservices/book/BookResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-book/src/main/java/com/quarkus/microservices/book/BookResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-book/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rest-book/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-book/src/test/java/com/quarkus/microservices/book/BookResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-book/src/test/java/com/quarkus/microservices/book/BookResourceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +46,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.All in BookResourceRequests.executor": "Run",
     "HTTP Request.BookResourceRequests | POST.executor": "Run",
     "HTTP Request.NumberResourceRequests | GET.executor": "Run",
+    "JUnit.BookResourceTest.shouldCreateBook.executor": "Run",
     "JUnit.NumberResourceTest.executor": "Run",
     "Maven.rest-book [clean,compile].executor": "Run",
     "Maven.rest-number [clean,compile].executor": "Run",
@@ -73,12 +74,31 @@
       <recent name="C:\Users\neima\IdeaProjects\Quarkus\vintageStore" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.BookResourceRequests | POST">
+  <component name="RunManager" selected="JUnit.BookResourceTest.shouldCreateBook">
+    <configuration name="All in BookResourceRequests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/rest-book/src/main/http/BookResourceRequests.http">
+      <method v="2" />
+    </configuration>
     <configuration name="BookResourceRequests | POST" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/rest-book/src/main/http/BookResourceRequests.http" requestIdentifier="POST" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="NumberResourceRequests | GET" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/rest-number/src/main/http/NumberResourceRequests.http" requestIdentifier="GET" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="BookResourceTest.shouldCreateBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quarkus.microservices.book.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.quarkus.microservices.book" />
+      <option name="MAIN_CLASS_NAME" value="com.quarkus.microservices.book.BookResourceTest" />
+      <option name="METHOD_NAME" value="shouldCreateBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="NumberResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-number" />
@@ -173,7 +193,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookResourceTest.shouldCreateBook" />
         <item itemvalue="HTTP Request.BookResourceRequests | POST" />
+        <item itemvalue="HTTP Request.All in BookResourceRequests" />
         <item itemvalue="JUnit.NumberResourceTest" />
         <item itemvalue="HTTP Request.NumberResourceRequests | GET" />
       </list>
@@ -196,7 +218,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725140922667</updated>
       <workItem from="1725140923684" duration="9846000" />
-      <workItem from="1725156002317" duration="2961000" />
+      <workItem from="1725156002317" duration="8187000" />
     </task>
     <task id="LOCAL-00001" summary="bootstrapping the microservices">
       <option name="closed" value="true" />
@@ -262,7 +284,55 @@
       <option name="project" value="LOCAL" />
       <updated>1725154094481</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="rest-book: create class diagram">
+      <option name="closed" value="true" />
+      <created>1725188852325</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725188852325</updated>
+    </task>
+    <task id="LOCAL-00010" summary="rest-book: Exposing book Rest endpoint">
+      <option name="closed" value="true" />
+      <created>1725188906231</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1725188906231</updated>
+    </task>
+    <task id="LOCAL-00011" summary="rest-book: create http request sample">
+      <option name="closed" value="true" />
+      <created>1725188922814</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1725188922814</updated>
+    </task>
+    <task id="LOCAL-00012" summary="rest-book: customize JSON output">
+      <option name="closed" value="true" />
+      <created>1725189692606</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1725189692606</updated>
+    </task>
+    <task id="LOCAL-00013" summary="rest-book: document the microservice">
+      <option name="closed" value="true" />
+      <created>1725192356404</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1725192356404</updated>
+    </task>
+    <task id="LOCAL-00014" summary="rest-book: add a comment">
+      <option name="closed" value="true" />
+      <created>1725192482375</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1725192482375</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +347,13 @@
     <MESSAGE value="rest-number: add class diagram" />
     <MESSAGE value="rest-number: documenting the microservice" />
     <MESSAGE value="rest-number: changing the port" />
-    <option name="LAST_COMMIT_MESSAGE" value="rest-number: changing the port" />
+    <MESSAGE value="rest-book: create class diagram" />
+    <MESSAGE value="rest-book: Exposing book Rest endpoint" />
+    <MESSAGE value="rest-book: create http request sample" />
+    <MESSAGE value="rest-book: customize JSON output" />
+    <MESSAGE value="rest-book: document the microservice" />
+    <MESSAGE value="rest-book: add a comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="rest-book: add a comment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
