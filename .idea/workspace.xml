@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78ece047-acec-4369-9c38-96635abb786c" name="Changes" comment="bootstrapping the microservices">
-      <change afterPath="$PROJECT_DIR$/rest-number/src/main/http/NumberResourceRequests.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/src/main/http/http-client.env.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/IsbnNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="78ece047-acec-4369-9c38-96635abb786c" name="Changes" comment="rest-number: add class diagram">
+      <change afterPath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/NumberMicroservice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-number/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rest-number/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/IsbnNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/IsbnNumbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/NumberResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/NumberResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-number/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rest-number/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTTP Request" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,9 +50,10 @@
     "Maven.rest-number [clean,compile].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/neima/IdeaProjects/Quarkus/vintageStore",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +63,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\neima\IdeaProjects\Quarkus\vintageStore" />
+    </key>
+  </component>
   <component name="RunManager" selected="Quarkus.rest-number">
     <configuration name="NumberResourceRequests | GET" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/rest-number/src/main/http/NumberResourceRequests.http" requestIdentifier="GET" runType="Run single request">
       <method v="2" />
@@ -168,7 +170,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725140922667</updated>
-      <workItem from="1725140923684" duration="4438000" />
+      <workItem from="1725140923684" duration="8809000" />
     </task>
     <task id="LOCAL-00001" summary="bootstrapping the microservices">
       <option name="closed" value="true" />
@@ -178,7 +180,47 @@
       <option name="project" value="LOCAL" />
       <updated>1725142960216</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update .gitignore">
+      <option name="closed" value="true" />
+      <created>1725147486770</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725147486770</updated>
+    </task>
+    <task id="LOCAL-00003" summary="rest-number: add http request">
+      <option name="closed" value="true" />
+      <created>1725147521025</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725147521025</updated>
+    </task>
+    <task id="LOCAL-00004" summary="rest-number: create IsbnNumbers and custamize Json">
+      <option name="closed" value="true" />
+      <created>1725147603220</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725147603220</updated>
+    </task>
+    <task id="LOCAL-00005" summary="rest-number: update get endpoint">
+      <option name="closed" value="true" />
+      <created>1725147621127</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725147621127</updated>
+    </task>
+    <task id="LOCAL-00006" summary="rest-number: add class diagram">
+      <option name="closed" value="true" />
+      <created>1725147634061</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725147634061</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +228,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bootstrapping the microservices" />
-    <option name="LAST_COMMIT_MESSAGE" value="bootstrapping the microservices" />
+    <MESSAGE value="update .gitignore" />
+    <MESSAGE value="rest-number: add http request" />
+    <MESSAGE value="rest-number: create IsbnNumbers and custamize Json" />
+    <MESSAGE value="rest-number: update get endpoint" />
+    <MESSAGE value="rest-number: add class diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="rest-number: add class diagram" />
   </component>
 </project>
