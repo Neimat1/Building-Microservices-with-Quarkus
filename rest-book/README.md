@@ -4,6 +4,21 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Book {
+        - isbn: String
+        - title: String
+        - author: String
+        - yearOfPublication: int
+        - genre: String
+        - creationDate: Instant
+        + toString(): String
+    }
+```
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
