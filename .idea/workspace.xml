@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78ece047-acec-4369-9c38-96635abb786c" name="Changes" comment="rest-number: changing the port">
+      <change afterPath="$PROJECT_DIR$/rest-book/src/main/http/BookResourceRequests.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-book/src/main/http/http-client.env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-book/src/main/java/com/quarkus/microservices/book/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-number/src/test/java/com/quarkus/microservices/number/NumberResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-number/src/test/java/com/quarkus/microservices/number/NumberResourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-book/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rest-book/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-book/src/main/java/com/quarkus/microservices/book/BookResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-book/src/main/java/com/quarkus/microservices/book/BookResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,14 +30,15 @@
   </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="file://$PROJECT_DIR$/rest-number/src/main/http/NumberResourceRequests.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/rest-book/src/main/http/BookResourceRequests.http" environment="dev" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2lRRV6DUg7XYGpTTvTFmoi4SeFa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -42,6 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.BookResourceRequests | POST.executor": "Run",
     "HTTP Request.NumberResourceRequests | GET.executor": "Run",
     "JUnit.NumberResourceTest.executor": "Run",
     "Maven.rest-book [clean,compile].executor": "Run",
@@ -51,7 +57,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/neima/IdeaProjects/Quarkus/vintageStore",
+    "last_opened_file_path": "C:/Users/neima/IdeaProjects/Quarkus/Building-Microservices-with-Quarkus/rest-book/src/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,10 +69,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\neima\IdeaProjects\Quarkus\Building-Microservices-with-Quarkus\rest-book\src\main" />
       <recent name="C:\Users\neima\IdeaProjects\Quarkus\vintageStore" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NumberResourceTest">
+  <component name="RunManager" selected="HTTP Request.BookResourceRequests | POST">
+    <configuration name="BookResourceRequests | POST" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/rest-book/src/main/http/BookResourceRequests.http" requestIdentifier="POST" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="NumberResourceRequests | GET" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/rest-number/src/main/http/NumberResourceRequests.http" requestIdentifier="GET" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -163,6 +173,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.BookResourceRequests | POST" />
         <item itemvalue="JUnit.NumberResourceTest" />
         <item itemvalue="HTTP Request.NumberResourceRequests | GET" />
       </list>
@@ -185,6 +196,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725140922667</updated>
       <workItem from="1725140923684" duration="9846000" />
+      <workItem from="1725156002317" duration="2961000" />
     </task>
     <task id="LOCAL-00001" summary="bootstrapping the microservices">
       <option name="closed" value="true" />
