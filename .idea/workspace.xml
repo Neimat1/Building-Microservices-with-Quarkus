@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78ece047-acec-4369-9c38-96635abb786c" name="Changes" comment="rest-number: add class diagram">
-      <change afterPath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/NumberMicroservice.java" afterDir="false" />
+    <list default="true" id="78ece047-acec-4369-9c38-96635abb786c" name="Changes" comment="rest-number: changing the port">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/IsbnNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/IsbnNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/NumberResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-number/src/main/java/com/quarkus/microservices/number/NumberResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-number/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rest-number/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-number/src/test/java/com/quarkus/microservices/number/NumberResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-number/src/test/java/com/quarkus/microservices/number/NumberResourceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +43,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "HTTP Request.NumberResourceRequests | GET.executor": "Run",
+    "JUnit.NumberResourceTest.executor": "Run",
     "Maven.rest-book [clean,compile].executor": "Run",
     "Maven.rest-number [clean,compile].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -68,9 +66,24 @@
       <recent name="C:\Users\neima\IdeaProjects\Quarkus\vintageStore" />
     </key>
   </component>
-  <component name="RunManager" selected="Quarkus.rest-number">
+  <component name="RunManager" selected="JUnit.NumberResourceTest">
     <configuration name="NumberResourceRequests | GET" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/rest-number/src/main/http/NumberResourceRequests.http" requestIdentifier="GET" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="NumberResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-number" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quarkus.microservices.number.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.quarkus.microservices.number" />
+      <option name="MAIN_CLASS_NAME" value="com.quarkus.microservices.number.NumberResourceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="rest-book" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
       <module name="rest-book" />
@@ -150,6 +163,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NumberResourceTest" />
         <item itemvalue="HTTP Request.NumberResourceRequests | GET" />
       </list>
     </recent_temporary>
@@ -170,7 +184,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725140922667</updated>
-      <workItem from="1725140923684" duration="8809000" />
+      <workItem from="1725140923684" duration="9846000" />
     </task>
     <task id="LOCAL-00001" summary="bootstrapping the microservices">
       <option name="closed" value="true" />
@@ -220,7 +234,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725147634061</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="rest-number: documenting the microservice">
+      <option name="closed" value="true" />
+      <created>1725154077143</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725154077143</updated>
+    </task>
+    <task id="LOCAL-00008" summary="rest-number: changing the port">
+      <option name="closed" value="true" />
+      <created>1725154094481</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725154094481</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +263,19 @@
     <MESSAGE value="rest-number: create IsbnNumbers and custamize Json" />
     <MESSAGE value="rest-number: update get endpoint" />
     <MESSAGE value="rest-number: add class diagram" />
-    <option name="LAST_COMMIT_MESSAGE" value="rest-number: add class diagram" />
+    <MESSAGE value="rest-number: documenting the microservice" />
+    <MESSAGE value="rest-number: changing the port" />
+    <option name="LAST_COMMIT_MESSAGE" value="rest-number: changing the port" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest-number/src/test/java/com/quarkus/microservices/number/NumberResourceTest.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
